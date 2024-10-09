@@ -77,7 +77,9 @@ $if(signature-after)$\vspace*{$signature-after$}$endif$}
   $endif$
   $if(signature-file)$
   \usepackage{graphicx}
-  \setkomavar{signature}{\includegraphics{$signature-file$}$if(author)$\\$for(author)$$author$$sep$\\$endfor$$endif$%
+  \setkomavar{signature}{%
+\includegraphics{$signature-file$}%
+$if(author)$\\$for(author)$$author$$sep$\\$endfor$$endif$%
 $if(signature-after)$\vspace*{$signature-after$}$endif$}
   $else$
   $if(author)$
