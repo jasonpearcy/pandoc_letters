@@ -55,8 +55,7 @@ Here's the Markdown source for a simple letter, `simple_letter.md`:
 
 To produce a PDF of the letter, simply type
 
-    pandoc -t latex --template=letter.latex -o simple_letter.pdf
-    simple_letter.md
+    pandoc -t latex --template=letter.latex -o simple_letter.pdf simple_letter.md
 
 While most letter related features are supported, there is currently no support
 for:
@@ -114,8 +113,7 @@ Here's the Markdown source for a more full featured letter,
 
 To produce a PDF of the letter, simply type
 
-    pandoc -t latex --template=letter.latex -o full_featured_letter.pdf
-    full_featured_letter.md
+    pandoc -t latex --template=letter.latex -o full_featured_letter.pdf full_featured_letter.md
 
 Compared to the simple letter, the full featured letter includes additional
 standard letter options:
@@ -208,8 +206,7 @@ Here's the Markdown source for a letter using the [`scrlttr2`] document class,
 
 To produce a PDF of the letter, type
 
-    pandoc -t latex --template=letter.latex -o scrlttr2_letter.pdf
-    scrlttr2_letter.md
+    pandoc -t latex --template=letter.latex -o scrlttr2_letter.pdf scrlttr2_letter.md
 
 This example is similar to the full featured letter above with the addition of
 a subject.  In general, letters with [KOMA-Script] allow for more customization
@@ -260,8 +257,7 @@ with the [`scrletter`] package, `scrletter_letter.md`:
 
 To produce a PDF of the letter, type
 
-    pandoc -t latex --template=letter.latex -o scrletter_letter.pdf
-    scrletter_letter.md
+    pandoc -t latex --template=letter.latex -o scrletter_letter.pdf scrletter_letter.md
 
 A formatting difference with this letter is that the SN letteroption is used.
 The SN letteroption will typeset the letter using the norm for Swiss letters.
